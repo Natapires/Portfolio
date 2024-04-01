@@ -17,7 +17,7 @@
   <img alt="Linktree Dark" src="preview.png" width="100%">
 </p>
 
-[🔗 Clique aqui para acessar](https://linktree-natapires.vercel.app/)
+[🔗 Clique aqui para acessar](https://natapiresdev.vercel.app/)
 
 ## 🛠 Tecnologias
 
