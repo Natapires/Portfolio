@@ -14,9 +14,7 @@
 <br>
 
 <p align="center">
-  <video width="640" height="360" controls>
-  <source src="preview.mp4" type="video/mp4">
-  </video>
+  <img alt="Linktree Dark" src="preview.png" width="100%">
 </p>
 
 [🔗 Clique aqui para acessar](https://linktree-natapires.vercel.app/)
