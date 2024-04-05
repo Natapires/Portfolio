@@ -446,8 +446,12 @@ span {
         width: 100vw;
         margin-top: 8rem;
     }
-    
+
     .about-content {
+        width: 90vw;
+    }
+
+    .about-content .technologys {
         width: 90vw;
         font-size: 5rem;
     }
