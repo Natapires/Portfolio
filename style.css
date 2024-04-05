@@ -446,6 +446,11 @@ span {
         width: 100vw;
         margin-top: 8rem;
     }
+    
+    .about-content {
+        width: 90vw;
+        font-size: 5rem;
+    }
 
     .about-img img {
         width: 100vw;
