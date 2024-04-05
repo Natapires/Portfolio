@@ -4,8 +4,8 @@ let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active')
-}
+    navbar.classList.toggle('active');
+};
 
 /*===== SCROLL SECTION ACTIVE LINK =====*/
 let sections = document.querySelectorAll('section');
@@ -18,12 +18,12 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach.apply(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
             });
-        };
+            document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+        }
     });
 
     /*===== STICKY NAVBAR =====*/
