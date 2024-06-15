@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="black">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +9,30 @@
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />          
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
     <title>Natã Pires. | Portfolio</title>
 </head>
 <body>
     <!--HEADER DESIGN-->
     <header class="header">
-        <a href="#" class="logo">Grupo <span>Pires</span></a>
+        <a href="#" class="logo">Pires <span>Dev</span></a>
 
         <i class="fas fa-bars" id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#home" class="active"></a>
+            <a href="#home" class="active">Início</a>
             <a href="#about">Sobre</a>
             <a href="#portfolio">Projetos</a>
             <a href="#contact">Contato</a>
         </nav>
+
+        <button id="toggle-mode" onclick="toggleMode()">
+            <span class="sr-only">Alterar Modo Claro</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
     </header>
 
     <!--HOME SECTION DESIGN-->
@@ -33,7 +41,7 @@
             <h3>Olá, meu nome é</h3>
             <h1>Natã Pires</h1>
             <h3>e eu sou um <span class="multiple-text"></span></h3>
-            <p>Sou um desenvolvedor junior, me especializando em grandes tecnologias como Javascript, React.js e Typescript. Atualmente trabalho como freelancer com o foco em Front-end, e concluíndo uma formação em front-end pela udemy.</p>
+            <p>Sou um desenvolvedor junior, me especializando em grandes tecnologias como Javascript, React.js, e Typescript. Atualmente trabalho como freelancer com o foco em Web Developer. <br><br>Tenho conhecimentos em .NET C#, sou certificado por um bootcamp .NET Developer</p>
             <div class="social-media">
                 <a href="https://twitter.com/iamnatapires" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.instagram.com/iamnatapires/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -44,7 +52,7 @@
         </div>
 
         <div class="home-img">
-            <img src="./assets/Avatar.png" alt="Avatar Natã Pires">
+            <img src="./assets/avatarnp.png" alt="Avatar Natã Pires">
         </div>
     </section>
     <!--ABOUT SECTION DESIGN-->
@@ -55,11 +63,11 @@
 
         <div class="about-content">
             <h2 class="heading">Sobre <span>mim</span></h2>
-            <h3>Front-end Developer</h3>
-            <p>Olá, meu nome é Natã, eu sou um desenvolvedor de software, atualmente com o foco em front-end. Sou residente da cidade de Suzano - Sp, Brasil.</p>
-            <p>Eu comecei na Programação em 2020 em meio a uma pandemia, foi onde eu tive o meu primeiro contato com a Programação; Trabalhava como auxiliar administrativo e vendendor nos finais de ano para complementar minha renda, foi quando tive a iniciativa de fazer um curso de lógica de programação, e HTML na fundação bradesco e também ter assistido muitos videos no youtube, logo em seguida ingressei em uma faculdade. Ainda na faculdade conheci uma plataforma de estudos de programação, a Dio.me e também a Rocketseat, onde eu consegui ter mais conhecimento em tecnologias e decidi que era essa área que eu desejava atuar. Hoje estou formado em Análise e Desenvolvimento de Sistemas, pela Universidade Mogi das Cruzes (UMC).</p>
-            <p>Atualmente, estou atuando como freelancer, e também atuo como voluntário na área tecnológica da minha comunidade Cristã, ajudando nas atividades de software, transmissão no youtube e liderando equipes.</p>
-            <p>Tenho conhecimento, e estou estudando as seguintes tecnologias: </p>
+            <h3>Full-Stack Developer</h3>
+            <p>Olá, meu nome é Natã e sou desenvolvedor de software, com foco em Web Developer. Atualmente, moro em Suzano - SP, Brasil.</p>
+            <p>Comecei na programação em 2020, durante a pandemia. Na época, trabalhava como auxiliar administrativo e vendedor para complementar minha renda. Decidi fazer um curso de lógica de programação e HTML na Fundação Bradesco, logo em seguida, ingressei na universidade e me formei em Análise e Desenvolvimento de Sistemas pela Universidade Mogi das Cruzes (UMC). Durante minha jornada acadêmica, descobri plataformas como <a href="https://www.dio.me/" target="_blank">Dio.me</a> e <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a>, onde adquiri mais conhecimento em diversas tecnologias. Foi nesse período que decidi focar minha carreira na área de desenvolvimento de software.</p>
+            <p>Atualmente, atuo como freelancer e voluntário na área tecnológica da minha comunidade Cristã. Ajudo em projetos de desenvolvimento de software, participo de transmissões no YouTube e lidero equipes em diversas atividades.</p>
+            <p>Presentemente, possuo conhecimento e estou aprofundando meus estudos nas seguintes tecnologias: </p>
             <ul class="technologys">
                 <li><i class="fab fa-html5" title="HTML5"></i></li>
                 <li><i class="fab fa-css3" title="CSS3"></i></li>
@@ -67,8 +75,10 @@
                 <li><i class="fab fa-react" title="React.js"></i></li>
                 <li><i class="fab fa-node-js" title="Node.js"></i></li>
                 <li><i class="fab fa-java" title="Java"></i></li>
-                <li><i class="fab fa-aws" title="AWS"></i></li>
+                <li><i class="devicon-csharp-plain" title="C#"></i></li>
+                <li><i class="devicon-dotnetcore-plain" title=".NET"></i></li>                
                 <li><i class="devicon-typescript-plain" title="Typescript"></i></li>
+                <li><i class="fab fa-aws" title="AWS"></i></li>
             </ul>
         </div>
     </section>
@@ -137,25 +147,24 @@
                 </div>
             </div>
         </div>
+        <a style="margin: 19px;" href="https://github.com/Natapires?tab=repositories" target="_blank" class="btn">Ver mais</a>
     </section>
 
     <!--CONTACT SECTION DESIGN-->
-    <section class="contact" id="contact">
+    <!-- <section class="contact" id="contact">
         <h2 class="heading">Entre em <span>Contato</span></h2>
 
-        <form action="https://formsubmit.co/bf5408f05750efc292e77f4eeaea9eea" method="POST">
+        <form action="mailto:ZZZ" method="POST">
             <div class="input-box">
                 <input type="text" placeholder="Nome Completo">
                 <input type="email" placeholder="E-mail" required>
             </div>
-
-            <div class="input-box">
-                <input type="number" placeholder="Número de Celular">
-                <input type="text" placeholder="Assunto do E-mail" required>
-            </div>
             <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
             <input type="submit" value="Enviar Mensagem" class="btn">
-        </form>
+    </section> -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Entre em <span>Contato</span></h2>
+        <a href="mailto:pires.nata1998@gmail.com" target="_blank" class="btn">Enviar Mensagem pelo E-mail</a>
     </section>
 
     <!--FOOTER DESIGN-->
