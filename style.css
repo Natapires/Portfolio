@@ -10,10 +10,10 @@
 }
 
 :root {
-    --bg-color: #191f36;
-    --snd-bg-color: #262840;
+    --bg-color: #302e2e;
+    --snd-bg-color: #4b4747;
     --text-color: #fff;
-    --main-color: #59b2f4;
+    --main-color: #c9730a;
 }
 
 html {

@@ -1,3 +1,14 @@
+/*===== TOGGLE MODE ======*/
+let darkMode = true
+const buttonToggle = document.getElementById('toggle-mode')
+
+buttonToggle.addEventListener('click', (event) => {
+    document.documentElement.classList.toggle('light')
+    const mode = darkMode ? 'light' : 'dark'
+    event.currentTarget.querySelector('span').textContent = `${mode} mode ativado!`
+    darkMode = !darkMode
+});
+
 /*===== TOGGLE ICON NAVBAR =====*/
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
@@ -49,7 +60,7 @@ ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
 
 /*===== TYPED JS =====*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Software Engineer 🖥️', 'Front-end Developer 💻'],
+    strings: ['Software Engineer 🖥️', 'Full-Stack Developer 💻'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
