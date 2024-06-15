@@ -16,9 +16,42 @@
     --main-color: #c9730a;
 }
 
+html.light {
+    --text-color: #070707;
+    --bg-color: #dddddd;
+    --snd-bg-color: #b5d1f8;
+    --main-color: #756c6c;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+  display: none;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: var(--text-color);
+  
+    cursor: pointer;
+}
+
+#toggle-mode {
+    position: absolute;
+    left: 35.2rem;
+    top: 2.0rem;
+    font-size: 3.0rem;
+    line-height: 0;
+    color: var(--text-color);
+}
+
+#toggle-mode.active {
+    transform: rotate(360deg); /* Rotaciona o botão em 360 graus */
 }
 
 body {
@@ -277,7 +310,7 @@ span {
     margin-bottom: 3rem;
 }
 
-.contact form {
+/* .contact form {
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
@@ -312,7 +345,12 @@ span {
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
-}
+} */
+
+.contact {
+    text-align: center;
+    padding: 10rem 9%;
+  }
 
 .footer {
     display: flex;
@@ -345,6 +383,14 @@ span {
     font-size: 2.4rem;
     color: var(--snd-bg-color);
 }
+
+    .about-content p a{
+        color: var(--main-color);
+    }
+
+    .about-content p a:hover{
+        text-decoration: underline;
+    }
 
 @media (max-width: 1200px) {
     html {
@@ -420,7 +466,7 @@ span {
     }
 
     .about {
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .about-img img {
