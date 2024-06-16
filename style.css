@@ -50,6 +50,10 @@ button {
     color: var(--text-color);
 }
 
+#toggle-mode:hover {
+    color: var(--main-color); /* Cor do botão ao passar o mouse */
+}
+
 #toggle-mode.active {
     transform: rotate(360deg); /* Rotaciona o botão em 360 graus */
 }
@@ -422,7 +426,7 @@ span {
 
 @media (max-width: 768px) {
     #menu-icon {
-        display: block;
+        display: flex;
     }
     .navbar {
         position: absolute;

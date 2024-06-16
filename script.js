@@ -13,10 +13,19 @@ buttonToggle.addEventListener('click', (event) => {
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active');
-};
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('fa-times');
+    if (menuIcon.classList.contains('fa-times')) {
+        document.querySelector('.navbar').style = "display: block";
+    } else {
+        document.querySelector('.navbar').style = "display: none";
+    }
+
+    if (window.innerWidth > 768) {
+        navbar.classList.toggle('active');
+        document.querySelector('.navbar').style = "display: block";
+    }
+})
 
 /*===== SCROLL SECTION ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section');
@@ -42,7 +51,7 @@ window.onscroll = () => {
     document.querySelector('header').classList.toggle('sticky', scrollPosition > 100);
 
     /*===== REMOVE TOGGLE ICON AND NAVBAR =====*/
-    menuIcon.classList.remove('fa-xmark');
+    menuIcon.classList.remove('fa-times');
     navbar.classList.remove('active');
 };
 
