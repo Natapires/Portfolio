@@ -10,22 +10,28 @@ buttonToggle.addEventListener('click', (event) => {
 });
 
 /*===== TOGGLE ICON NAVBAR =====*/
+// Toggle para ativar/desativar a navegação
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 
 menuIcon.addEventListener('click', () => {
-    menuIcon.classList.toggle('fa-times');
-    if (menuIcon.classList.contains('fa-times')) {
-        document.querySelector('.navbar').style = "display: block";
-    } else {
-        document.querySelector('.navbar').style = "display: none";
-    }
+    menuIcon.classList.toggle('fa-times');  // Alterna o ícone para "fechar"
 
+    // Alterna a visibilidade do menu
+    navbar.classList.toggle('active'); 
+
+    // Se a tela for maior que 768px, o menu deve permanecer visível sem alterar a estrutura
     if (window.innerWidth > 768) {
-        navbar.classList.toggle('active');
-        document.querySelector('.navbar').style = "display: block";
+        navbar.style.display = 'flex';
+    } else {
+        // Se o menu for clicado em telas menores, a visibilidade muda
+        if (navbar.classList.contains('active')) {
+            navbar.style.display = 'block';
+        } else {
+            navbar.style.display = 'none';
+        }
     }
-})
+});
 
 /*===== SCROLL SECTION ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section');
@@ -69,7 +75,7 @@ ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
 
 /*===== TYPED JS =====*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Software Engineer 🖥️', '.NET C# Developer 💻'],
+    strings: ['Software Developer 🖥️'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
