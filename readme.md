@@ -14,7 +14,11 @@
 <br>
 
 <p align="center">
-  <img alt="Linktree Dark" src="preview.png" width="100%">
+  <img alt="Dark mode portfolio" src="previewdarkmode.png" width="100%">
+</p>
+<br>
+<p align="center">
+  <img alt="Light mode portfolio" src="previewlightmode.png" width="100%">
 </p>
 
 [🔗 Clique aqui para acessar](https://natapiresdev.vercel.app/)
